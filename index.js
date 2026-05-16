@@ -13,4 +13,16 @@ btn.addEventListener("click",function(){
     else{
         alert("Inscription réussie"+"nom: "+nom.value+" email: "+email.value+" password: "+password.value);
     }
+});
+btn.addEventListener("click",()=>{
+  const name=nom.value;
+  const mail=email.value;
+  const pass=password.value;
+    const users=JSON.parse(localStorage.getItem("users")) || [];
+    users.push({nom: name, email: mail, password: pass});
+    localStorage.setItem("users", JSON.stringify(users));
+
+    alert(`Inscription réussie ! nom: ${name} email: ${mail} password: ${pass}`);
+    nom.value=email.value=password.value="";
+
 })
