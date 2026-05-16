@@ -11,15 +11,14 @@ btn.addEventListener("click", function() {
         alert("Le mot de passe doit contenir au moins 8 caractères");
     }
     else {
-        // Sauvegarde localStorage
         const users = JSON.parse(localStorage.getItem("users")) || [];
         users.push({ nom: nom.value, email: email.value, password: password.value });
         localStorage.setItem("users", JSON.stringify(users));
 
-        // Alerte succès
-        alert(`Inscription réussie ! nom: ${nom.value} email: ${email.value} password: ${password.value}`);
+        alert(`Inscription réussie ! nom: ${nom.value} email: ${email.value}`);
         
-        // Reset
         nom.value = email.value = password.value = "";
+
+        window.location.href = "index.html";
     }
 });
