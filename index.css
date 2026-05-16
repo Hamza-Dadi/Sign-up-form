@@ -8,14 +8,14 @@ h1{
 input{
     padding: 0.5rem;
     width: 200px;
-    background-color: #0fab7a;
+    background-color: #ef0000;
     border: 1px solid black;
     border-radius: 15px;
 }
 
 .button1{
     padding: 0.5rem 1rem;
-    background-color: #0fab7a;
+    background-color: #ff0000;
     border: 1px solid black;
     border-radius: 15px;
     cursor: pointer;
@@ -36,5 +36,5 @@ input{
 }
 
 body{
-    background-color: #0fab7a;
+    background-color: #ff0000;
 }
