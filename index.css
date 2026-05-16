@@ -1,40 +1,84 @@
-h1{
-        margin-top: 3rem;
-
-    text-align: center;
-    font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-input{
-    padding: 0.5rem;
-    width: 200px;
-    background-color: #ef0000;
-    border: 1px solid black;
-    border-radius: 15px;
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top left, #7b6cff 0%, #3d3ad8 35%, #1b1d4d 100%);
+  color: #1b1b32;
 }
 
-.button1{
-    padding: 0.5rem 1rem;
-    background-color: #ff0000;
-    border: 1px solid black;
-    border-radius: 15px;
-    cursor: pointer;
+.form {
+  width: min(420px, 90vw);
+  padding: 40px 30px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 20px 60px rgba(18, 18, 56, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  text-align: center;
 }
 
-.form{
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+.form h1 {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: #2a2751;
 }
 
-.mamanbtn{
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+.form input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 16px;
+  border: 1px solid #dcdcf1;
+  border-radius: 16px;
+  background: #f8f8ff;
+  font-size: 1rem;
+  color: #36364f;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-body{
-    background-color: #ff0000;
+.form input:focus {
+  outline: none;
+  border-color: #7b6cff;
+  box-shadow: 0 0 0 4px rgba(123, 108, 255, 0.12);
+}
+
+.form input::placeholder {
+  color: #8d8db0;
+}
+
+.form button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 15px 18px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #5d54ff, #7b6cff);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 28px rgba(123, 108, 255, 0.22);
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 32px 20px;
+  }
+
+  .form h1 {
+    font-size: 1.6rem;
+  }
 }
