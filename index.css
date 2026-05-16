@@ -1,0 +1,40 @@
+h1{
+        margin-top: 3rem;
+
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+input{
+    padding: 0.5rem;
+    width: 200px;
+    background-color: #0fab7a;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.button1{
+    padding: 0.5rem 1rem;
+    background-color: #0fab7a;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.mamanbtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+body{
+    background-color: #0fab7a;
+}
